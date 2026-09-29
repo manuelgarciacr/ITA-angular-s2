@@ -1,20 +1,21 @@
 {
-  "name": "bootstrap",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "purgecss": "purgecss --css sass/*.css --content *.html --output css",
-    "pepe": "perico"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "bootstrap": "^5.3.0"
-  },
-  "devDependencies": {
-    "purgecss": "^5.0.0"
-  }
+    "name": "bootstrap",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "purgecss": "purgecss --css sass/*.css --content *.html --output css",
+        "build": "sass sass/:sass/ --no-source-map --silence-deprecation=import --silence-deprecation=if-function --silence-deprecation=color-functions --silence-deprecation=global-builtin && purgecss --css sass/*.css --content *.html --output cs"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bootstrap": "^5.3.8"
+    },
+    "devDependencies": {
+        "purgecss": "^8.0.0",
+        "sass": "^1.105.0"
+    }
 }
